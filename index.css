@@ -1,0 +1,385 @@
+/* Style för header */
+header {
+  border-bottom: 3px solid #ccc;
+  overflow: hidden;
+}
+
+/* Wrapper för huvudinnehåll */
+header .header-content {
+  background-color: #c4babae1;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+/* Style för logo */
+header .logo-container {
+  display: flex;
+  position: relative;
+}
+
+
+header img {
+  width: 370px;
+  height: auto;
+  margin-right: 5rem;
+}
+
+/* Kennel Team Holländers Text */
+header .kennel-text {
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+  font-size: 60px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  width: 630px;
+  height: 80px;
+ 
+}
+
+
+/* Från nos till svans, hund med elegegans*/
+.slogan { 
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  margin-top: 160px;
+  white-space: nowrap;
+  font-style: italic;
+  width: 500px;
+  height: 50px;
+}
+
+
+nav {
+  position: absolute !important;
+  bottom: 0;
+  right: 0rem !important;
+  left: 26rem !important;
+  width: 800px;
+  height: 70px;
+}
+
+.nav-link {
+  color: #333333;
+  width: 100px;
+  height: 70px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-right: 60px !important; /* ökar avståndet mellan knapparna med 30px */
+}
+
+.nav-link:hover {
+  color: white !important;
+  background-color: #a79393;;
+}
+
+#index {
+  color: white !important;
+  background-color: #a79393;
+}
+
+
+/* ÄNDRA INNEHÅLLET UNDER HUVUD RUBRIKEN */
+main h1 {
+  text-align: center;
+  background-color: #ff9c9c81;
+}
+
+p4 {
+  text-align: center;
+  background-color: #ff9c9c81;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+ 
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 14,9vh; /* eller valfri höjd */
+  margin-top: 60px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.container1 h1
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-style: georgia;
+}
+
+btn btn-primary {
+  color: #333;
+}
+
+
+/* Från nos till svans, hund med elegans */
+.slogan {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 9rem;
+  white-space: nowrap;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  opacity: 0; /* börja med opacity 0 för att fadea in senare */
+  animation: fade-in 2s ease-in-out forwards, move-up 2s ease-in-out forwards; /* använd animationer för att fadea in och flytta upp */
+}
+
+/* CSS-animationer */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotateX(30deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Nav links */
+nav .nav-link {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+/* CSS-animation för nav links */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Kennel Team Holländers Text */
+header .kennel-text {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  font-size: 60px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  animation: slide-in 2s forwards;
+}
+
+/* Keyframes för animationen */
+@keyframes slide-in {
+  from {
+    left: -100%; /* startpositionen på vänster sida */
+  }
+  to {
+    left: 100%; /* slutpositionen i mitten */
+  }
+}
+
+.container1 h1 {
+  animation: blink 6s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  /* Här skriver du den CSS-kod som bara ska gälla för mobil enheter */
+  /* Style för header */
+header {
+  border-bottom: 2px solid #ccc;
+  overflow: hidden;
+}
+
+
+
+/* Style för logo */
+header .logo-container {
+  display: flex;
+  position: relative;
+}
+
+
+header img {
+  width: 100%;
+  max-width: 150px;
+  max-height:200px;
+  margin-right: 1%;
+  margin-top: 70px;
+}
+
+/* Kennel Team Holländers Text */
+header .kennel-text {
+  text-align: auto;
+  transform: translate(100%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  width: 80px; /*Ändra hur långt åt höer Kennel Team Holländers ska ligga */
+ 
+}
+
+
+/* Från nos till svans, hund med elegegans*/
+
+
+nav {
+  position: absolute !important;
+  bottom: 0;
+  right: 0rem !important;
+  left: 8.4rem !important;
+  width: 300px;
+  height: 60px;
+}
+
+.nav-link {
+  color: #333333;
+  width: 20px;
+  height: 0.2px;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 40px !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+  background-color: #a79393;;
+}
+
+#index {
+  color: white !important;
+  background-color: #a79393;
+}
+
+
+
+.container1 h1 /* Senaste Nytt! - Väntar Valkull! */
+{
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-style: georgia;
+}
+
+btn btn-primary {
+  color: #333;
+}
+
+
+/* Från nos till svans, hund med elegans */
+.slogan {
+  font-size: 1.3rem;
+  margin-top: 3rem; /*Flytta Från nos till svans, hund med elegans upp eller ner */
+  margin-left: -3rem;/*Flytta Från nos till svans, hund med elegans höger/vänster */
+}
+
+
+/* CSS-animationer */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotateX(30deg);
+  }
+  to {
+    transform: rotateX(0);
+  }
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Kennel Team Holländers Text */
+header .kennel-text {
+  position: absolute;
+  top: 30%; /* Flytta texten upp eller ner Kennel Team Holländers */
+  font-size: 33px; /* Ändra storleken på Texten Kennel Team Holländers */
+  animation: slide-in 2s forwards;
+}
+
+/* Keyframes för animationen */
+@keyframes slide-in {
+  from {
+    left: -100%; /* startpositionen på vänster sida */
+  }
+  to {
+    left: 5%; /* slutpositionen i mitten */
+  }
+}
+
+.container1 h1 {
+  animation: blink 6s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+}
